@@ -1,11 +1,12 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
+import { Link } from "wouter";
 
 const navItems = [
-  { label: "Home", left: "left-[344px]" },
-  { label: "Services", left: "left-[511px]" },
-  { label: "Portfolio", left: "left-[713px]" },
-  { label: "About", left: "left-[916px]" },
+  { label: "Home", left: "left-[344px]", href: "/" },
+  { label: "Services", left: "left-[511px]", href: "/#services" },
+  { label: "Portfolio", left: "left-[713px]", href: "/#portfolio" },
+  { label: "About", left: "left-[916px]", href: "/about" },
 ];
 
 export const NavigationBarSection = (): JSX.Element => {
@@ -14,12 +15,13 @@ export const NavigationBarSection = (): JSX.Element => {
       <div className="absolute top-[31px] left-[247px] w-[1081px] h-14 bg-[#5d5d5b] rounded-[31px] backdrop-blur-[6.3px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(6.3px)_brightness(100%)] opacity-[0.49]" />
 
       {navItems.map((item, index) => (
-        <button
-          key={index}
-          className={`${item.left} w-auto absolute top-[47px] [font-family:'Supreme_Variable-Regular',Helvetica] font-normal text-[#fcfbff] text-xl text-center tracking-[0] leading-[normal] cursor-pointer hover:opacity-80 transition-opacity`}
-        >
-          {item.label}
-        </button>
+        <Link key={index} href={item.href}>
+          <span
+            className={`${item.left} w-auto absolute top-[47px] [font-family:'Supreme_Variable-Regular',Helvetica] font-normal text-[#fcfbff] text-xl text-center tracking-[0] leading-[normal] cursor-pointer hover:opacity-80 transition-opacity`}
+          >
+            {item.label}
+          </span>
+        </Link>
       ))}
 
       <div className="flex w-60 h-[60px] items-center gap-4 absolute top-[29px] left-[999px] rounded-[54px]">
