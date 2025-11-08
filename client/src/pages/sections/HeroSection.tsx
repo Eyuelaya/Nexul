@@ -40,6 +40,7 @@ export const HeroSection = (): JSX.Element => {
         <div className="absolute top-[622px] flex items-center justify-center gap-4 w-full max-w-[309px]">
           <Button
             variant="outline"
+             onClick={() => document.getElementById('contact-section')?.scrollIntoView({ behavior: 'smooth' })}
             className="flex-1 h-auto items-center justify-center gap-2 p-3 bg-[#2c2c2c] rounded-lg overflow-hidden hover:bg-white/10"
           >
             <span className="font-body-text font-[number:var(--body-text-font-weight)] text-white text-[length:var(--body-text-font-size)] tracking-[var(--body-text-letter-spacing)] leading-[var(--body-text-line-height)] [font-style:var(--body-text-font-style)]">
@@ -49,6 +50,7 @@ export const HeroSection = (): JSX.Element => {
 
           <Button
             variant="outline"
+             onClick={() => document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' })}
             className="flex-1 h-auto items-center justify-center gap-2 p-3 bg-[#2c2c2c] rounded-lg overflow-hidden border border-solid hover:bg-[#3c3c3c]"
           >
             <span className="font-small-text font-[number:var(--small-text-font-weight)] text-neutral-100 text-[length:var(--small-text-font-size)] tracking-[var(--small-text-letter-spacing)] leading-[var(--small-text-line-height)] [font-style:var(--small-text-font-style)]">

@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 export const MissionStatementSection = (): JSX.Element => {
   return (
 
-    <section className="relative w-full py-24 flex items-center justify-center h-screen">
+    <section className="relative w-full py-24 flex items-center justify-center h-screen" id="services">
       <div className="container mx-auto px-4">
         <div className="relative flex flex-col items-center">
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1400px] h-[600px] pointer-events-none">
@@ -48,13 +48,17 @@ export const MissionStatementSection = (): JSX.Element => {
             </div>
 
             <div className="flex flex-col sm:flex-row items-center gap-4 mt-8">
-              <Button className="bg-[#2c2c2c] text-neutral-100 hover:bg-[#3c3c3c] rounded-lg border border-solid border-neutral-700 h-auto px-3 py-3">
+              <Button 
+              onClick={() => document.getElementById('contact-section')?.scrollIntoView({ behavior: 'smooth' })}
+              className="bg-[#2c2c2c] text-neutral-100 hover:bg-[#3c3c3c] rounded-lg border border-solid border-neutral-700 h-auto px-3 py-3">
                 <span className="font-small-text font-[number:var(--small-text-font-weight)] text-[length:var(--small-text-font-size)] tracking-[var(--small-text-letter-spacing)] leading-[var(--small-text-line-height)] [font-style:var(--small-text-font-style)]">
                   Learn More
                 </span>
               </Button>
 
-              <button className="font-small-text font-[number:var(--small-text-font-weight)] text-white text-[length:var(--small-text-font-size)] tracking-[var(--small-text-letter-spacing)] leading-[var(--small-text-line-height)] [font-style:var(--small-text-font-style)] hover:underline">
+              <button 
+              onClick={() => document.getElementById('contact-section')?.scrollIntoView({ behavior: 'smooth' })}
+              className="font-small-text font-[number:var(--small-text-font-weight)] text-white text-[length:var(--small-text-font-size)] tracking-[var(--small-text-letter-spacing)] leading-[var(--small-text-line-height)] [font-style:var(--small-text-font-style)] hover:underline">
                 Contact us &gt;
               </button>
             </div>

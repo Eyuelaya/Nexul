@@ -46,7 +46,7 @@ export const NavigationBarSection = (): JSX.Element => {
         alt="Union"
         src="/figmaAssets/union-1.svg"
       />
-
+       <a href="#H">
        <div className="absolute top-[51px] left-[calc(46.00%_-_699px)] w-[164px] h-[60px]">
         <img
           className="absolute top-0 left-0 w-[60px] h-[60px]"
@@ -61,6 +61,7 @@ export const NavigationBarSection = (): JSX.Element => {
           </div>
         </div>
       </div>
+      </a>
     </nav>
   );
 };

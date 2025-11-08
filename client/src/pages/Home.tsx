@@ -195,7 +195,7 @@ export const Home = (): JSX.Element => {
 
       <MissionStatementSection />
 
-      <section className="w-full relative py-16 px-4">
+      <section className="w-full relative py-16 px-4" id="work">
         <div className="max-w-[1323px] mx-auto">
           <div className="text-center mb-16">
             <div className="font-page-top font-[number:var(--page-top-font-weight)] text-white text-[length:var(--page-top-font-size)] tracking-[var(--page-top-letter-spacing)] leading-[var(--page-top-line-height)] [font-style:var(--page-top-font-style)] mb-10">
@@ -346,7 +346,7 @@ export const Home = (): JSX.Element => {
         </div>
       </section>
 
-      <section className="w-full relative py-16 px-4">
+      <section className="w-full relative py-16 px-4" id="contact-section">
         <div className="max-w-[1448px] mx-auto">
           <div className="text-center mb-16">
             <h2 className="[font-family:'Technor_Variable-Medium',Helvetica] font-medium text-white text-[64px] text-center tracking-[0] leading-[normal] mb-6">

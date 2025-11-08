@@ -264,7 +264,7 @@
 }
 @layer base {
   body {
-    background: linear-gradient(182deg, #08080C 0%, #544870 48%, #100F12 69%, #130D20 100%) !important;
+    background: linear-gradient(182deg, #08080C 0%, #544870 38%, #100F12 69%, #130D20 100%) !important;
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 100vh;
