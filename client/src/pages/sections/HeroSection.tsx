@@ -1,14 +1,31 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 
+
 export const HeroSection = (): JSX.Element => {
   return (
     <section className="relative w-full h-[799px]">
-      <img
+      {/* full-cover background video */}
+      <video
         className="absolute inset-0 w-full h-full object-cover"
-        alt="Bg video made with"
-        src="/figmaAssets/bg-video-2---made-with-clipchamp-1.png"
-      />
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        poster="/figmaAssets/bg-video-2---made-with-clipchamp-1.png"
+      >
+        <source src="/figmaAssets/bg-hero.mp4" type="video/mp4" />
+        {/* optional webm fallback with matching base name */}
+        <source src="/figmaAssets/bg-hero.webm" type="video/webm" />
+
+        {/* Fallback image shown if the browser doesn't support video or sources are missing. */}
+        <img
+          className="absolute inset-0 w-full h-full object-cover"
+          alt="Bg video made with"
+          src="/figmaAssets/bg-video-2---made-with-clipchamp-1.png"
+        />
+      </video>
 
       <div className="relative flex flex-col items-center justify-center h-full px-4">
         <h1 className="absolute top-[323px] w-full max-w-[665px] [-webkit-text-stroke:1px_#101111] font-h1 font-[number:var(--h1-font-weight)] text-white text-[length:var(--h1-font-size)] text-center tracking-[var(--h1-letter-spacing)] leading-[var(--h1-line-height)] [font-style:var(--h1-font-style)]">
@@ -22,8 +39,8 @@ export const HeroSection = (): JSX.Element => {
 
         <div className="absolute top-[622px] flex items-center justify-center gap-4 w-full max-w-[309px]">
           <Button
-            variant="ghost"
-            className="flex-1 h-auto items-center justify-center gap-2 p-3 rounded-lg overflow-hidden bg-transparent hover:bg-white/10"
+            variant="outline"
+            className="flex-1 h-auto items-center justify-center gap-2 p-3 bg-[#2c2c2c] rounded-lg overflow-hidden hover:bg-white/10"
           >
             <span className="font-body-text font-[number:var(--body-text-font-weight)] text-white text-[length:var(--body-text-font-size)] tracking-[var(--body-text-letter-spacing)] leading-[var(--body-text-line-height)] [font-style:var(--body-text-font-style)]">
               Get Started

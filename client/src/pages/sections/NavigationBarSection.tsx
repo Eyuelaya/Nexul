@@ -11,7 +11,7 @@ const navItems = [
 
 export const NavigationBarSection = (): JSX.Element => {
   return (
-    <nav className="relative w-full h-[91px]">
+    <nav className="w-full h-[91px] absolute top-0 left-0 z-50 bg-transparent">
       <div className="absolute top-[31px] left-[247px] w-[1081px] h-14 bg-[#5d5d5b] rounded-[31px] backdrop-blur-[6.3px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(6.3px)_brightness(100%)] opacity-[0.49]" />
 
       {navItems.map((item, index) => (
@@ -42,20 +42,21 @@ export const NavigationBarSection = (): JSX.Element => {
       </div>
 
       <img
-        className="absolute top-0 left-0.5 w-[200px] h-[69px]"
+        className="absolute top-5 left-0.5 w-[200px] h-[69px]"
         alt="Union"
         src="/figmaAssets/union-1.svg"
       />
 
-      <div className="absolute top-[31px] left-[calc(50.00%_-_668px)] w-[164px] h-[60px]">
+       <div className="absolute top-[51px] left-[calc(46.00%_-_699px)] w-[164px] h-[60px]">
         <img
           className="absolute top-0 left-0 w-[60px] h-[60px]"
           alt="Logo icon"
           src="/figmaAssets/logoicon.svg"
         />
 
+        
         <div className="absolute -top-0.5 left-[60px] w-[136px] h-[60px] flex">
-          <div className="mt-[6.7px] w-[142px] h-[60px] [font-family:'Unbounded',Helvetica] font-medium text-transparent text-6xl tracking-[-1.50px] leading-[60px] whitespace-nowrap">
+          <div className="text-[#7266FE] mt-[6.7px] w-[120px] h-[40px] [font-family:'Unbounded',Helvetica] font-bold  text-7xl tracking-[-1.50px] leading-[60px] whitespace-nowrap">
             exul
           </div>
         </div>

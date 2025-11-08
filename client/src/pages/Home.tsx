@@ -115,7 +115,7 @@ const pricingTiers = [
 
 export const Home = (): JSX.Element => {
   return (
-    <div className="w-full min-h-screen bg-black">
+    <div className="w-full min-h-screen overflow-x-hidden">
       <NavigationBarSection />
 
       <HeroSection />

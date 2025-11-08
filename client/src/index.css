@@ -6,6 +6,15 @@
     all: unset;
   }
 }
+@font-face {
+  font-family: 'Technor-Regular';
+  src: url('../figmaAssets/fonts/Technor-Regular.woff2') format('woff2'),
+       url('../figmaAssets/fonts/Technor-Regular.woff') format('woff'),
+       url('../figmaAssets/fonts/Technor-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
 
 :root {
   --body-base-font-family: "Inter", Helvetica;
@@ -241,9 +250,29 @@
   * {
     @apply border-border;
   }
+}
 
+/* Force a global font override to Technor_Variable across the site.
+   This ensures components that set explicit font-family via Tailwind
+   arbitrary classes are visually consistent with the requested font.
+   If you prefer not to use !important, we can instead update each
+   component's font-family declarations. */
+@layer base {
+  html, body, #root, * {
+    font-family: 'Technor-Regular', Helvetica, sans-serif !important;
+  }
+}
+@layer base {
   body {
-    @apply bg-background text-foreground;
-    font-feature-settings: "rlig" 1, "calt" 1;
+    background: linear-gradient(182deg, #08080C 0%, #544870 48%, #100F12 69%, #130D20 100%) !important;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    height: 100%;
   }
 }
