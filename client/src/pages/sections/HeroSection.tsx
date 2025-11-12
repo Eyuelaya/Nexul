@@ -15,7 +15,7 @@ export const HeroSection = (): JSX.Element => {
         preload="metadata"
         poster="/figmaAssets/bg-video-2---made-with-clipchamp-1.png"
       >
-        <source src="/figmaAssets/bg-hero.mp4" type="video/mp4" />
+        <source src="/figmaAssets/bg-hero1.mp4" type="video/mp4" />
         {/* optional webm fallback with matching base name */}
         <source src="/figmaAssets/bg-hero.webm" type="video/webm" />
 
@@ -28,7 +28,7 @@ export const HeroSection = (): JSX.Element => {
       </video>
 
       <div className="relative flex flex-col items-center justify-center h-full px-4">
-        <h1 className="absolute top-[323px] w-full max-w-[665px] [-webkit-text-stroke:1px_#101111] font-h1 font-[number:var(--h1-font-weight)] text-white text-[length:var(--h1-font-size)] text-center tracking-[var(--h1-letter-spacing)] leading-[var(--h1-line-height)] [font-style:var(--h1-font-style)]">
+        <h1 className="absolute top-[323px] w-full max-w-[665px] [-webkit-text-stroke:1px_#101111]  font-[Technor-Bold] font-h1  text-white text-[length:var(--h1-font-size)] text-center tracking-[var(--h1-letter-spacing)] leading-[var(--h1-line-height)] ">
           Build your digital presence. Expand your impact.
         </h1>
 

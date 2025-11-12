@@ -6,48 +6,58 @@ const navigationLinks = [
   { label: "Home", href: "#home" },
   { label: "Services", href: "#services" },
   { label: "Portfolio", href: "#portfolio" },
-  { label: "About", href: "#about" },
-  { label: "Contact", href: "#contact" },
+  { label: "About", href: "/about#about" },
+  { label: "Contact", href: "/home#contact" },
 ];
 
 export const FooterSection = (): JSX.Element => {
   return (
-    <footer className="relative w-full bg-[#130d20]">
-      <div className="w-full px-[62px] py-8">
-        <div className="flex flex-col gap-8">
-          <div className="flex items-center justify-between">
-            <nav className="flex items-center gap-8">
+    <footer className="relative w-full bg-[#130d20] text-[#dcd5e9]">
+      <div className="w-full max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-10">
+        <div className="flex flex-col gap-10">
+          {/* Top Row: Nav + Email */}
+          <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
+            {/* Navigation Links */}
+            <nav className="flex flex-wrap justify-center lg:justify-start gap-6">
               {navigationLinks.map((link, index) => (
                 <a
                   key={index}
                   href={link.href}
-                  className="font-nav font-[number:var(--nav-font-weight)] text-[#dcd5e9] text-[length:var(--nav-font-size)] tracking-[var(--nav-letter-spacing)] leading-[var(--nav-line-height)] whitespace-nowrap [font-style:var(--nav-font-style)] hover:text-white transition-colors cursor-pointer"
+                  className="font-nav text-[#dcd5e9] hover:text-white transition-colors text-base md:text-lg"
                 >
                   {link.label}
                 </a>
               ))}
             </nav>
 
-            <div className="flex items-start gap-3">
+            {/* Email Subscription */}
+            <form
+              onSubmit={(e) => e.preventDefault()}
+              className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto"
+            >
               <Input
                 type="email"
                 placeholder="you@example.com"
-                defaultValue="you@example.com"
-                className="w-60 h-auto px-4 py-3 bg-white rounded-lg border border-solid border-[#d9d9d9] font-single-line-body-base font-[number:var(--single-line-body-base-font-weight)] text-[#1e1e1e] text-[length:var(--single-line-body-base-font-size)] tracking-[var(--single-line-body-base-letter-spacing)] leading-[var(--single-line-body-base-line-height)] [font-style:var(--single-line-body-base-font-style)]"
+                className="flex-1 min-w-0 sm:w-60 px-4 py-3 bg-white rounded-lg border border-[#d9d9d9] text-[#1e1e1e] placeholder:text-gray-500 focus:ring-2 focus:ring-[#7266FE] focus:outline-none"
+                required
               />
-              <Button className="h-auto px-6 py-3 bg-[#2c2c2c] rounded-lg border border-solid hover:bg-[#3c3c3c] font-single-line-body-base font-[number:var(--single-line-body-base-font-weight)] text-neutral-100 text-[length:var(--single-line-body-base-font-size)] tracking-[var(--single-line-body-base-letter-spacing)] leading-[var(--single-line-body-base-line-height)] [font-style:var(--single-line-body-base-font-style)]">
+              <Button
+                type="submit"
+                className="w-full sm:w-auto px-6 py-3 bg-[#2c2c2c] hover:bg-[#3c3c3c] text-neutral-100 rounded-lg"
+              >
                 Submit
               </Button>
-            </div>
+            </form>
           </div>
 
-          <div className="flex items-center justify-between">
+          {/* Bottom Row: Logo + Rights */}
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <img
-              className="w-[195px] h-[62px]"
+              className="w-40 h-auto"
               alt="Union"
               src="/figmaAssets/union.svg"
             />
-            <p className="[font-family:'Inter',Helvetica] font-normal text-[#d9d9d9] text-base tracking-[0] leading-4 whitespace-nowrap">
+            <p className="text-sm sm:text-base text-[#d9d9d9] text-center sm:text-right">
               © 2024 Nexul. All rights reserved
             </p>
           </div>

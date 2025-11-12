@@ -8,7 +8,6 @@ import { NavigationBarSection } from "./sections/NavigationBarSection";
 import { PricingSection } from "./sections/PricingSection";
 import { SuccessStoriesSection } from "./sections/SuccessStoriesSection";
 import { TestimonialsSection } from "./sections/TestimonialsSection";
-
 const whyChooseCards = [
   {
     image: "/figmaAssets/image-3.png",
@@ -83,7 +82,7 @@ const pricingTiers = [
       "4 rounds of revisions",
       "6 months of support & hosting",
       "Performance optimization",
-      "1 year Do",
+      "1 year of Domain name",
     ],
     buttonText: "Get Started",
     buttonVariant: "default" as const,
@@ -195,7 +194,7 @@ export const Home = (): JSX.Element => {
 
       <MissionStatementSection />
 
-      <section className="w-full relative py-16 px-4" id="work">
+      <section className="w-full relative py-16 px-4">
         <div className="max-w-[1323px] mx-auto">
           <div className="text-center mb-16">
             <div className="font-page-top font-[number:var(--page-top-font-weight)] text-white text-[length:var(--page-top-font-size)] tracking-[var(--page-top-letter-spacing)] leading-[var(--page-top-line-height)] [font-style:var(--page-top-font-style)] mb-10">
@@ -248,11 +247,14 @@ export const Home = (): JSX.Element => {
           </div>
 
           <div className="flex justify-center">
-            <Button className="bg-[#2c2c2c] text-neutral-100 rounded-lg border border-solid h-auto px-3 py-3 hover:bg-[#3c3c3c]">
+            <a href="/about#portfolio">
+            <Button 
+            className="bg-[#2c2c2c] text-neutral-100 rounded-lg border border-solid h-auto px-3 py-3 hover:bg-[#3c3c3c]">
               <span className="font-small-text font-[number:var(--small-text-font-weight)] text-[length:var(--small-text-font-size)] tracking-[var(--small-text-letter-spacing)] leading-[var(--small-text-line-height)] [font-style:var(--small-text-font-style)]">
                 View All
               </span>
             </Button>
+            </a>
           </div>
         </div>
       </section>
@@ -363,7 +365,7 @@ export const Home = (): JSX.Element => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 items-start">
             <div className="relative">
               <img
                 className="w-full h-auto object-cover rounded-lg"
@@ -372,7 +374,7 @@ export const Home = (): JSX.Element => {
               />
             </div>
 
-            <Card className="bg-neutral-950 rounded-[14px] border-[0.8px] border-neutral-800 shadow-[0px_4px_6px_-4px_#0000001a,0px_10px_15px_-3px_#0000001a]">
+            <Card id="contact" className="bg-neutral-950 rounded-[14px] border-[0.8px] border-neutral-800 shadow-[0px_4px_6px_-4px_#0000001a,0px_10px_15px_-3px_#0000001a]">
               <CardContent className="p-6">
                 <div className="mb-6">
                   <h3 className="[font-family:'Arial-Regular',Helvetica] font-normal text-[#f9f9f9] text-base tracking-[0] leading-4 mb-2">

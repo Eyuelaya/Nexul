@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 export const MissionStatementSection = (): JSX.Element => {
   return (
 
-    <section className="relative w-full py-24 flex items-center justify-center h-screen" id="services">
+    <section className="relative w-full py-24 flex items-center justify-center h-screen">
       <div className="container mx-auto px-4">
         <div className="relative flex flex-col items-center">
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1400px] h-[600px] pointer-events-none">

@@ -59,7 +59,7 @@ export const PricingSection = (): JSX.Element => {
   };
 
   return (
-    <section className="flex flex-col items-start gap-4 w-full">
+    <section id="services" className="flex flex-col items-start gap-4 w-full">
       <header className="flex items-center gap-2 w-full">
         <img
           className="w-5 h-5"
