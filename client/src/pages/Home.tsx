@@ -30,7 +30,7 @@ const portfolioProjects = [
     image: "/figmaAssets/image.png",
     title: "Digital Banking Platform",
     description: "Modernizing financial services for Ethiopian entrepreneurs.",
-    tags: ["Wed Design", "Search Engine Optimization", "Responsive", "Fintech"],
+    tags: ["Wed Design ", "Search Engine Optimization ", "Responsive ", "Finetech"],
     link: "Explore Case >",
   },
   {
@@ -114,7 +114,7 @@ const pricingTiers = [
 
 export const Home = (): JSX.Element => {
   return (
-    <div className="w-full min-h-screen overflow-x-hidden">
+    <div className="mx-auto w-full min-h-screen overflow-x-hidden bg-[linear-gradient(182deg,#08080C_15%,#544870_38%,#100F12_69%,#130D20_100%)]">
       <NavigationBarSection />
 
       <HeroSection />
@@ -122,19 +122,19 @@ export const Home = (): JSX.Element => {
       <section className="w-full relative py-16 px-4">
         <div className="max-w-[1321px] mx-auto">
           <div className="text-center mb-16">
-            <div className="font-page-top font-[number:var(--page-top-font-weight)] text-white text-[length:var(--page-top-font-size)] tracking-[var(--page-top-letter-spacing)] leading-[var(--page-top-line-height)] [font-style:var(--page-top-font-style)] mb-10">
+            <div className="font-page-top font-[number:var(--page-top-font-weight)] [font-family:'Technor-bold',Helvetica] text-white text-[length:var(--page-top-font-size)] tracking-[var(--page-top-letter-spacing)] leading-[var(--page-top-line-height)] [font-style:var(--page-top-font-style)] mb-5">
               Accelerate
             </div>
-            <h2 className="[font-family:'Technor_Variable-Regular',Helvetica] font-normal text-white text-5xl text-center tracking-[0] leading-[normal] mb-6">
+            <h2 className="[font-family:'Technor-Regular',Helvetica] font-normal text-white text-5xl text-center tracking-[0] leading-[normal] mb-6">
               Why Choose Nexul?
             </h2>
-            <p className="font-body-text font-[number:var(--body-text-font-weight)] text-[length:var(--body-text-font-size)] text-center text-white tracking-[var(--body-text-letter-spacing)] leading-[var(--body-text-line-height)] [font-style:var(--body-text-font-style)] max-w-[872px] mx-auto">
+            <p className="sup font-body-text font-[number:var(--body-text-font-weight)] text-[length:var(--body-text-font-size)] text-center text-white tracking-[var(--body-text-letter-spacing)] leading-[var(--body-text-line-height)] [font-style:var(--body-text-font-style)] max-w-[872px] mx-auto">
               We deliver digital solutions that transform businesses quickly and
               effectively.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
             {whyChooseCards.map((card, index) => (
               <Card
                 key={index}
@@ -164,14 +164,10 @@ export const Home = (): JSX.Element => {
               </Card>
             ))}
 
-            <Card className="bg-transparent rounded-[28px] border-0 overflow-hidden">
-              <CardContent className="p-0 relative h-full">
-                <img
-                  className="w-full h-full object-cover rounded-[28px_0px_0px_28px]"
-                  alt="Conversion focused design"
-                  src="/figmaAssets/image-5.png"
-                />
-                <div className="absolute inset-0 flex flex-col justify-end p-6 bg-gradient-to-t from-black/60 to-transparent">
+            <Card className="bg-transparent rounded-[28px] border-0 overflow-hidden col-span-2">
+              <CardContent className="p-0 relative h-full flex flex-row">
+                {/* Text Content Section - Left Side */}
+                <div className="flex-1 bg-black flex flex-col justify-end p-6">
                   <div className="font-small-text font-[number:var(--small-text-font-weight)] text-white text-[length:var(--small-text-font-size)] tracking-[var(--small-text-letter-spacing)] leading-[var(--small-text-line-height)] [font-style:var(--small-text-font-style)] mb-4">
                     Impact
                   </div>
@@ -179,16 +175,24 @@ export const Home = (): JSX.Element => {
                     Conversion-focused design
                   </h3>
                   <p className="font-nav font-[number:var(--nav-font-weight)] text-white text-[length:var(--nav-font-size)] tracking-[var(--nav-letter-spacing)] leading-[var(--nav-line-height)] [font-style:var(--nav-font-style)] mb-6 max-w-[220px]">
-                    Websites engineered to drive sales, trust, and business
-                    growth.
+                    Websites engineered to drive sales, trust, and business growth.
                   </p>
                   <div className="font-small-text font-[number:var(--small-text-font-weight)] text-white text-[length:var(--small-text-font-size)] tracking-[var(--small-text-letter-spacing)] leading-[var(--small-text-line-height)] [font-style:var(--small-text-font-style)] cursor-pointer">
                     See our approach &gt;
                   </div>
                 </div>
+
+                {/* Image Section - Right Side */}
+                <div className="flex-1 relative">
+                  <img
+                    className="w-full h-full object-cover"
+                    alt="Conversion focused design"
+                    src="/figmaAssets/image-5.png"
+                  />
+                </div>
               </CardContent>
             </Card>
-          </div>
+           </div>
         </div>
       </section>
 
@@ -197,13 +201,13 @@ export const Home = (): JSX.Element => {
       <section className="w-full relative py-16 px-4">
         <div className="max-w-[1323px] mx-auto">
           <div className="text-center mb-16">
-            <div className="font-page-top font-[number:var(--page-top-font-weight)] text-white text-[length:var(--page-top-font-size)] tracking-[var(--page-top-letter-spacing)] leading-[var(--page-top-line-height)] [font-style:var(--page-top-font-style)] mb-10">
+            <div className="tech font-page-top font-[number:var(--page-top-font-weight)] text-white text-[length:var(--page-top-font-size)] tracking-[var(--page-top-letter-spacing)] leading-[var(--page-top-line-height)] [font-style:var(--page-top-font-style)]">
               Portfolio
             </div>
-            <h2 className="[font-family:'Technor_Variable-Regular',Helvetica] font-normal text-[64px] text-white tracking-[0] leading-[normal] mb-6">
+            <h2 className="[font-family:'Technor-Regular',Helvetica] font-normal text-[64px] text-white tracking-[0] leading-[normal] mb-6">
               Our digital success stories
             </h2>
-            <p className="font-body-text font-[number:var(--body-text-font-weight)] text-[length:var(--body-text-font-size)] text-center text-white tracking-[var(--body-text-letter-spacing)] leading-[var(--body-text-line-height)] [font-style:var(--body-text-font-style)] max-w-[806px] mx-auto">
+            <p className="sup font-[number:var(--body-text-font-weight)] text-[length:var(--body-text-font-size)] text-center text-white tracking-[var(--body-text-letter-spacing)] leading-[var(--body-text-line-height)] [font-style:var(--body-text-font-style)] max-w-[806px] mx-auto">
               Transforming African businesses through powerful web solutions.
             </p>
           </div>
@@ -221,23 +225,23 @@ export const Home = (): JSX.Element => {
                     src={project.image}
                   />
                   <div className="p-6">
-                    <h3 className="[font-family:'Technor_Variable-Regular',Helvetica] font-normal text-white text-[26px] tracking-[0] leading-[normal] mb-4">
+                    <h3 className="[font-family:'Technor-Regular',Helvetica] font-normal text-white text-[26px] tracking-[0] leading-[normal] mb-4">
                       {project.title}
                     </h3>
-                    <p className="font-body-text font-[number:var(--body-text-font-weight)] text-white text-[length:var(--body-text-font-size)] tracking-[var(--body-text-letter-spacing)] leading-[var(--body-text-line-height)] [font-style:var(--body-text-font-style)] mb-6">
+                    <p className="sup font-body-text font-[number:var(--body-text-font-weight)] text-white text-[length:var(--body-text-font-size)] tracking-[var(--body-text-letter-spacing)] leading-[var(--body-text-line-height)] [font-style:var(--body-text-font-style)] mb-6">
                       {project.description}
                     </p>
                     <div className="flex flex-wrap gap-2 mb-6">
                       {project.tags.map((tag, tagIndex) => (
                         <span
                           key={tagIndex}
-                          className="font-small-text font-[number:var(--small-text-font-weight)] text-white text-[length:var(--small-text-font-size)] tracking-[var(--small-text-letter-spacing)] leading-[var(--small-text-line-height)] [font-style:var(--small-text-font-style)]"
+                          className="tech font-small-text font-[number:var(--small-text-font-weight)] text-white text-[length:var(--small-text-font-size)] tracking-[var(--small-text-letter-spacing)] leading-[var(--small-text-line-height)] [font-style:var(--small-text-font-style)]"
                         >
                           {tag}
                         </span>
                       ))}
                     </div>
-                    <div className="font-small-text font-[number:var(--small-text-font-weight)] text-white text-[length:var(--small-text-font-size)] tracking-[var(--small-text-letter-spacing)] leading-[var(--small-text-line-height)] [font-style:var(--small-text-font-style)] cursor-pointer">
+                    <div className="font-small-text text-xs font-[number:var(--small-text-font-weight)] text-white text-[length:var(--small-text-font-size)] tracking-[var(--small-text-letter-spacing)] leading-[var(--small-text-line-height)] [font-style:var(--small-text-font-style)] cursor-pointer">
                       {project.link}
                     </div>
                   </div>
@@ -351,10 +355,10 @@ export const Home = (): JSX.Element => {
       <section className="w-full relative py-16 px-4" id="contact-section">
         <div className="max-w-[1448px] mx-auto">
           <div className="text-center mb-16">
-            <h2 className="[font-family:'Technor_Variable-Medium',Helvetica] font-medium text-white text-[64px] text-center tracking-[0] leading-[normal] mb-6">
+            <h2 className="tech font-medium  text-white text-[64px] text-center tracking-[0] leading-[normal] mb-6">
               Ready to grow your business online?
             </h2>
-            <p className="font-body-text font-[number:var(--body-text-font-weight)] text-[length:var(--body-text-font-size)] text-white text-center tracking-[var(--body-text-letter-spacing)] leading-[var(--body-text-line-height)] [font-style:var(--body-text-font-style)] max-w-[808px] mx-auto mb-12">
+            <p className="sup font-body-text font-[number:var(--body-text-font-weight)] text-[length:var(--body-text-font-size)] text-white text-center tracking-[var(--body-text-letter-spacing)] leading-[var(--body-text-line-height)] [font-style:var(--body-text-font-style)] max-w-[808px] mx-auto mb-12">
               Let's discuss how we can create a website that drives results and
               expands your market reach.
             </p>
@@ -402,10 +406,11 @@ export const Home = (): JSX.Element => {
                   </div>
                 </div>
               </CardContent>
+              
             </Card>
+            
           </div>
-
-          <div className="text-center mt-12">
+          <div className="mt-12">
             <p className="[font-family:'Arial-Regular',Helvetica] font-normal text-[#90a1b8] text-base text-center tracking-[0] leading-6">
               Have questions? Email us at{" "}
               <span className="text-white">hello@nexul.com</span>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-
+import styles from "./styles.module.css";
 
 export const HeroSection = (): JSX.Element => {
   return (
@@ -28,20 +28,20 @@ export const HeroSection = (): JSX.Element => {
       </video>
 
       <div className="relative flex flex-col items-center justify-center h-full px-4">
-        <h1 className="absolute top-[323px] w-full max-w-[665px] [-webkit-text-stroke:1px_#101111]  font-[Technor-Bold] font-h1  text-white text-[length:var(--h1-font-size)] text-center tracking-[var(--h1-letter-spacing)] leading-[var(--h1-line-height)] ">
+        <h1 className="tech font-medium absolute top-[323px] w-full max-w-[665px] font-h1  text-white text-[length:var(--h1-font-size)] text-center tracking-[var(--h1-letter-spacing)] leading-[var(--h1-line-height)] ">
           Build your digital presence. Expand your impact.
         </h1>
 
-        <p className="absolute top-[506px] w-full max-w-[891px] text-[22px] [font-family:'Supreme_Variable-Regular',Helvetica] font-normal text-white text-center tracking-[0] leading-[normal]">
+        <p className="sup absolute top-[506px] w-full max-w-[891px] text-[22px] [font-family:'Supreme_Variable-Regular',Helvetica] font-normal text-white text-center tracking-[0] leading-[normal]">
           Affordable, high-converting websites crafted for African businesses
           ready to grow. We turn digital dreams into powerful online realities.
         </p>
 
         <div className="absolute top-[622px] flex items-center justify-center gap-4 w-full max-w-[309px]">
           <Button
-            variant="outline"
+            variant="ghost"
              onClick={() => document.getElementById('contact-section')?.scrollIntoView({ behavior: 'smooth' })}
-            className="flex-1 h-auto items-center justify-center gap-2 p-3 bg-[#2c2c2c] rounded-lg overflow-hidden hover:bg-white/10"
+            className="flex-1 h-auto items-center justify-center gap-2 p-3 bg-[#303030] rounded-lg overflow-hidden hover:bg-white/10"
           >
             <span className="font-body-text font-[number:var(--body-text-font-weight)] text-white text-[length:var(--body-text-font-size)] tracking-[var(--body-text-letter-spacing)] leading-[var(--body-text-line-height)] [font-style:var(--body-text-font-style)]">
               Get Started
@@ -49,11 +49,11 @@ export const HeroSection = (): JSX.Element => {
           </Button>
 
           <Button
-            variant="outline"
+            variant="ghost"
              onClick={() => document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' })}
-            className="flex-1 h-auto items-center justify-center gap-2 p-3 bg-[#2c2c2c] rounded-lg overflow-hidden border border-solid hover:bg-[#3c3c3c]"
+            className="flex-1 h-auto items-center justify-center gap-2 p-3 bg-[#303030] rounded-lg overflow-hidden hover:bg-white/10"
           >
-            <span className="font-small-text font-[number:var(--small-text-font-weight)] text-neutral-100 text-[length:var(--small-text-font-size)] tracking-[var(--small-text-letter-spacing)] leading-[var(--small-text-line-height)] [font-style:var(--small-text-font-style)]">
+            <span className="font-body-text font-[number:var(--small-text-font-weight)] text-white text-[length:var(--small-text-font-size)] tracking-[var(--small-text-letter-spacing)] leading-[var(--small-text-line-height)] [font-style:var(--small-text-font-style)]">
               View our work
             </span>
           </Button>

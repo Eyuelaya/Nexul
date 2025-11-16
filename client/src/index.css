@@ -24,6 +24,15 @@
   font-display: swap;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Supreme-Variable';
+  src: url('../figmaAssets/fonts/Supreme-Variable.woff2') format('woff2'),
+       url('../figmaAssets/fonts/Supreme-Variable.woff') format('woff'),
+       url('../figmaAssets/fonts/Supreme-Variable.ttf') format('truetype');
+  font-weight: 100 800;
+  font-display: swap;
+  font-style: normal;
+}
 :root {
   --body-base-font-family: "Inter", Helvetica;
   --body-base-font-size: 16px;
@@ -264,15 +273,16 @@
    This ensures components that set explicit font-family via Tailwind
    arbitrary classes are visually consistent with the requested font.
    If you prefer not to use !important, we can instead update each
-   component's font-family declarations. */
+   component's font-family declarations. 
 @layer base {
   html, body, #root, * {
     font-family: 'Technor-Regular', Helvetica, sans-serif !important;
   }
-}
+}*/
+
+
 @layer base {
 body {
-  background: linear-gradient(182deg, #08080C 0%, #544870 38%, #100F12 69%, #130D20 100%) !important;
   background-repeat: no-repeat;
   background-attachment: fixed;
   min-height: 100vh;
@@ -283,4 +293,15 @@ body {
   html {
     height: 100%;
   }
+}
+
+.tech {
+  font-family: 'Technor-Regular', sans-serif;
+}
+.sup {
+  font-family: 'Supreme-Variable', sans-serif;
+  font-weight: 300;
+}
+.tech-bold {
+  font-family: 'Technor-Bold', sans-serif;
 }
