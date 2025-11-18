@@ -8,7 +8,7 @@
     "build": "vite build",
     "start": "vite preview --port 5000",
     "check": "tsc",
-    "deploy": "vite build && vite-plugin-gh-pages --dir dist/public"
+    "deploy": "vite build && gh-pages -d dist/public"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",

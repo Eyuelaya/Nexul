@@ -61,7 +61,7 @@ export const NavigationBarSection = (): JSX.Element => {
           showLogo ? "opacity-100" : "opacity-0"
         }`}
         alt="Union"
-        src="/Nexul/figmaAssets/union-1.svg"
+        src="/figmaAssets/union-1.svg"
       />
 
       <a href="#H">
