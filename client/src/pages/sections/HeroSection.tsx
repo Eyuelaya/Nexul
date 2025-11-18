@@ -15,15 +15,15 @@ export const HeroSection = (): JSX.Element => {
         preload="metadata"
         poster="/Nexul/figmaAssets/bg-video-2---made-with-clipchamp-1.png"
       >
-        <source src="/figmaAssets/bg-hero1.mp4" type="video/mp4" />
+        <source src="/Nexul/figmaAssets/bg-hero1.mp4" type="video/mp4" />
         {/* optional webm fallback with matching base name */}
-        <source src="/figmaAssets/bg-hero.webm" type="video/webm" />
+        <source src="/Nexul/figmaAssets/bg-hero.webm" type="video/webm" />
 
         {/* Fallback image shown if the browser doesn't support video or sources are missing. */}
         <img
           className="absolute inset-0 w-full h-full object-cover"
           alt="Bg video made with"
-          src="/figmaAssets/bg-video-2---made-with-clipchamp-1.png"
+          src="/Nexul/figmaAssets/bg-video-2---made-with-clipchamp-1.png"
         />
       </video>
 

@@ -61,7 +61,7 @@ export const NavigationBarSection = (): JSX.Element => {
           showLogo ? "opacity-100" : "opacity-0"
         }`}
         alt="Union"
-        src="/figmaAssets/union-1.svg"
+        src="/Nexul/figmaAssets/union-1.svg"
       />
 
       <a href="#H">
@@ -74,7 +74,7 @@ export const NavigationBarSection = (): JSX.Element => {
           <img
             className="absolute top-0 left-0 w-[60px] h-[60px]"
             alt="Logo icon"
-            src="/figmaAssets/logoicon.svg"
+            src="/Nexul/figmaAssets/logoicon.svg" 
           />
 
           <div className="absolute -top-0.5 left-[60px] w-[136px] h-[60px] flex">
