@@ -114,7 +114,7 @@ const pricingTiers = [
 
 export const Home = (): JSX.Element => {
   return (
-    <div className="mx-auto w-full min-h-screen overflow-x-hidden bg-[linear-gradient(182deg,#08080C_15%,#544870_38%,#100F12_69%,#130D20_100%)]">
+    <div className="mx-auto w-full min-h-screen bg-[linear-gradient(182deg,#08080C_25%,#544870_48%,#100F12_69%,#130D20_100%)]">
       <NavigationBarSection />
 
       <HeroSection />

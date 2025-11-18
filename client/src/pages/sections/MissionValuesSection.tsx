@@ -26,7 +26,7 @@ const values = [
 
 export const MissionValuesSection = (): JSX.Element => {
   return (
-    <section className="w-full relative py-20 px-4 bg-neutral-950/50">
+    <section className="w-full relative py-20 px-4 bg-neutral-950/50 bg-[url('/figmaAssets/bg-about.png')] bg-cover bg-center">
       <div className="max-w-[1323px] mx-auto">
         <div className="text-center mb-16">
           <div className="font-page-top font-[number:var(--page-top-font-weight)] text-white text-[length:var(--page-top-font-size)] tracking-[var(--page-top-letter-spacing)] leading-[var(--page-top-line-height)] [font-style:var(--page-top-font-style)] mb-10">
