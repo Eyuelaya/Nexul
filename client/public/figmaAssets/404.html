@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script>
+      // For hash-based routing
+      const path = window.location.pathname + window.location.search + window.location.hash;
+      const base = '/Nexul';
+      
+      // If this is a direct link to a route, convert it to hash routing
+      if (!window.location.hash && path !== base + '/' && path !== base + '/index.html') {
+        // Extract the path after the base and convert to hash route
+        const routePath = path.startsWith(base) 
+          ? path.slice(base.length) 
+          : path;
+        
+        // Redirect to main page with hash routing
+        window.location.href = base + '/#' + (routePath || '/');
+      } else {
+        // Already using hash routing or main page, redirect to index
+        window.location.href = base + '/index.html';
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Redirecting...</h1>
+    <a href="/Nexul/">Click here if you are not redirected.</a>
+  </body>
+</html>
