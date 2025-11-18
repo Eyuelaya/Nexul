@@ -13,7 +13,7 @@ export const HeroSection = (): JSX.Element => {
         loop
         playsInline
         preload="metadata"
-        poster="/figmaAssets/bg-video-2---made-with-clipchamp-1.png"
+        poster="/Nexul/figmaAssets/bg-video-2---made-with-clipchamp-1.png"
       >
         <source src="/figmaAssets/bg-hero1.mp4" type="video/mp4" />
         {/* optional webm fallback with matching base name */}
