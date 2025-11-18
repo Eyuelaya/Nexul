@@ -15,12 +15,12 @@ export const MissionStatementSection = (): JSX.Element => {
             <img
             className="absolute top-0 left-0 w-[40%] sm:w-[45%] md:w-[60%] h-full object-contain scale-110"
             alt="Left iPhone"
-            src="/figmaAssets/left-iphone.png"
+            src="/Nexul/figmaAssets/left-iphone.png"
           />
           <img
             className="absolute top-0 right-0 w-[40%] sm:w-[45%] md:w-[60%] h-full object-contain scale-110"
             alt="Right iPhone"
-            src="/figmaAssets/right-iphone.png">
+            src="/Nexul/figmaAssets/right-iphone.png">
             </img>
 
           </div>
@@ -49,7 +49,7 @@ export const MissionStatementSection = (): JSX.Element => {
               <img
                 className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14"
                 alt="Nexul logo icon"
-                src="/figmaAssets/logoicon-1.svg"
+                src="/Nexul/figmaAssets/logoicon-1.svg"
               />
               <div className="font-medium text-transparent text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-tight bg-gradient-to-r from-white to-gray-300 bg-clip-text">
                 exul
