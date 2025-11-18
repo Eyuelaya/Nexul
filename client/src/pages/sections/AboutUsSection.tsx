@@ -11,7 +11,7 @@ export const AboutUsSection = (): JSX.Element => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-[150px]">
-          <img className="object-cover " src="../figmaAssets/eyuel.png"></img>
+          <img className="object-cover " src="/figmaAssets/eyuel.png"></img>
           <p className="tech font-normal text-white col-span-2 text-2xl">Lead Developer with a Google certification and specialized expertise in Cybersecurity. Renowned for implementing advanced security solutions and fostering technological innovation.</p>
         </div>
        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -26,13 +26,13 @@ export const AboutUsSection = (): JSX.Element => {
           {/* Jose image */}
           <img
             className="object-cover w-[260px] z-10"
-            src="../figmaAssets/jose.png"
+            src="/figmaAssets/jose.png"
           />
 
           {/* Laptop image overlapping under jose */}
           <img
             className="absolute bottom-[-140px] w-[90%] max-w-[450px] z-20"
-            src="../figmaAssets/laptop.png"
+            src="/figmaAssets/laptop.png"
           />
 
         </div>

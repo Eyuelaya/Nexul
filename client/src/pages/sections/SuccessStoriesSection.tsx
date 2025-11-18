@@ -14,14 +14,14 @@ const formFields = [
     id: "pricing-option",
     label: "Pricing Option",
     placeholder: "Select pricing option",
-    icon: "/figmaAssets/icon-26.svg",
+    icon: "../figmaAssets/icon-26.svg",
     required: true,
   },
   {
     id: "desired-timeline",
     label: "Desired Timeline",
     placeholder: "Select timeline",
-    icon: "/figmaAssets/icon-20.svg",
+    icon: "../figmaAssets/icon-20.svg",
     required: true,
   },
 ];

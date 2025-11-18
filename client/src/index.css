@@ -8,27 +8,27 @@
 }
 @font-face {
   font-family: 'Technor-Regular';
-  src: url('/Nexul/figmaAssets/fonts/Technor-Regular.woff2') format('woff2'),
-       url('/Nexul/figmaAssets/fonts/Technor-Regular.woff') format('woff'),
-       url('/Nexul/figmaAssets/fonts/Technor-Regular.ttf') format('truetype');
+  src: url('/figmaAssets/fonts/Technor-Regular.woff2') format('woff2'),
+       url('/figmaAssets/fonts/Technor-Regular.woff') format('woff'),
+       url('/figmaAssets/fonts/Technor-Regular.ttf') format('truetype');
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: 'Technor-Bold';
-  src: url('../figmaAssets/fonts/Technor-Bold.woff2') format('woff2'),
-       url('../figmaAssets/fonts/Technor-Bold.woff') format('woff'),
-       url('../figmaAssets/fonts/Technor-Bold.ttf') format('truetype');
+  src: url('/figmaAssets/fonts/Technor-Bold.woff2') format('woff2'),
+       url('/figmaAssets/fonts/Technor-Bold.woff') format('woff'),
+       url('/figmaAssets/fonts/Technor-Bold.ttf') format('truetype');
   font-weight: 700;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: 'Supreme-Variable';
-  src: url('../figmaAssets/fonts/Supreme-Variable.woff2') format('woff2'),
-       url('../figmaAssets/fonts/Supreme-Variable.woff') format('woff'),
-       url('../figmaAssets/fonts/Supreme-Variable.ttf') format('truetype');
+  src: url('/figmaAssets/fonts/Supreme-Variable.woff2') format('woff2'),
+       url('/figmaAssets/fonts/Supreme-Variable.woff') format('woff'),
+       url('/figmaAssets/fonts/Supreme-Variable.ttf') format('truetype');
   font-weight: 100 800;
   font-display: swap;
   font-style: normal;

@@ -74,7 +74,7 @@ export const NavigationBarSection = (): JSX.Element => {
           <img
             className="absolute top-0 left-0 w-[60px] h-[60px]"
             alt="Logo icon"
-            src="/Nexul/figmaAssets/logoicon.svg" 
+            src="/figmaAssets/logoicon.svg" 
           />
 
           <div className="absolute -top-0.5 left-[60px] w-[136px] h-[60px] flex">
