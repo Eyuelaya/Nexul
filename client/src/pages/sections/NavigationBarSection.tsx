@@ -6,7 +6,7 @@ const navItems = [
   { label: "Home", left: "left-[444px]", href: "/" },
   { label: "Services", left: "left-[611px]", href: "/#services" },
   { label: "Portfolio", left: "left-[813px]", href: "/#portfolio" },
-  { label: "About", left: "left-[1021px]", href: "/about" },
+  { label: "About", left: "left-[1021px]", href: "/Nexul/about" },
 ];
 
 export const NavigationBarSection = (): JSX.Element => {
